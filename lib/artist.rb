@@ -1,4 +1,5 @@
 require 'pry'
+#binding.pry
 class Artist
 
   attr_accessor :name, :songs
@@ -33,8 +34,10 @@ class Artist
   end
   
   def print_songs
-    binding.pry
-    puts @songs
+    #binding.pry
+    @songs.each do |song|
+      puts song.name
+    end
   end
 
 end
